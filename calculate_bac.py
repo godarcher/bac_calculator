@@ -10,4 +10,5 @@ class bac_finder(object):
     def normal_drink(self):
         return round((self.std * self.volume) * self.amount, 2)
         
-    '
+    def man_prom(self):
+        return round((self.normal_drink() * 12) / ((self.myweight * 1.7) - (0.15 * self.time)), 2)
