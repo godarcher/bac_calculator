@@ -25,5 +25,7 @@ class bac_finder(object):
     def result(self):
         if self.gender == "woman":
             print(f'\nAs a woman who drank {self.amount} cl. of {self.volume}% vol, {self.time} hours ago.')
+            print(f'You have had {self.normal_drink()} drinks, which gives you a {self.woman_prom()}% BAC\n ')
         elif self.gender == "man":
             print(f'\nAs a man who drank {self.amount} cl. of {self.volume}% vol, {self.time} hours ago.')
+            print(f'You have had {self.normal_drink()} drinks, which gives you a {self.man_prom()}% BAC\n ')
