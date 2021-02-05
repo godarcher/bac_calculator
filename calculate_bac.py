@@ -29,3 +29,8 @@ class bac_finder(object):
         elif self.gender == "man":
             print(f'\nAs a man who drank {self.amount} cl. of {self.volume}% vol, {self.time} hours ago.')
             print(f'You have had {self.normal_drink()} drinks, which gives you a {self.man_prom()}% BAC\n ')
+
+
+#in the main we will add some examples per illustration
+Peter = bac_finder(80, 3, 7.8, 33, "man")
+Serra = bac_finder(67, 1, 12, 70, "woman")
