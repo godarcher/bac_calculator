@@ -7,4 +7,7 @@ class bac_finder(object):
         self.gender = gender
         self.std = 0.0068
 
-    def normal_drink
+    def normal_drink(self):
+        return round((self.std * self.volume) * self.amount, 2)
+        
+    '
