@@ -20,3 +20,10 @@ class bac_finder(object):
     #this function calculates teh promillage of a woman
     def woman_prom(self):
         return round((self.normal_drink() * 12) / ((self.myweight * 1.6) - (0.15 * self.time)), 2)
+
+    #this functions prints the results
+    def result(self):
+        if self.gender == "woman":
+            print(f'\nAs a woman who drank {self.amount} cl. of {self.volume}% vol, {self.time} hours ago.')
+        elif self.gender == "man":
+            print(f'\nAs a man who drank {self.amount} cl. of {self.volume}% vol, {self.time} hours ago.')
